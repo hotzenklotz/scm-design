@@ -1,0 +1,54 @@
+.container {
+
+  width: @pageWidth;
+  margin-left: 20%;
+  margin-right: 40%;
+  position: relative;
+
+  transition: all .5s linear;
+  -webkit-transform: translate(150%, 300%);
+
+  .title {
+
+    font-size: 170px;
+    font-weight: 800;
+    text-align: center;
+    color: @accentColor;
+    text-shadow: 10px -10px 0 @accentColor2;
+
+  }
+
+  .subtitle {
+
+    position: absolute;
+    left: 107px;
+    width: @pageWidth;
+
+    font-size: 35px;
+    font-weight: 800;
+
+    p {
+      margin: 0px;
+    }
+
+    p:nth-child(2) {
+      margin-left: 35px;
+    }
+  }
+
+  .background {
+
+    background-color: @accentColor;
+
+    position: absolute;
+    width: @pageWidth;
+    height: 1000px;
+    top: 181px;
+    left: 442px;
+    z-index: -1;
+
+    -webkit-transform: skewX(40deg);
+
+  }
+
+}
